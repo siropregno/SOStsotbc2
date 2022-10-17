@@ -1,0 +1,161 @@
+<style>
+body {background: url(https://fondosmil.com/fondo/29366.jpg)}
+h1 {font-size:60px ;}
+h3 {font-size: 35px;}
+nav{position:fixed;top:0;width:100%;left:0; display: flex;background-color:#eee;justify-content:space-between;align-items:center;}#titulo {margin-top: 100px; font-family: 'Press Start 2P', cursive; text-align: center; color: #ffffff;text-shadow: 0 1px 0 #888, 0 2px 0 #777, 0 3px 0 #666, 0 4px 0 #555, 0 5px 0 #444, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 0px 0px 10px rgba(0,0,0,0.65);}
+audio::-webkit-media-controls-panel { background-color: #eee; }
+#descripcion {font-family: 'Press Start 2P', cursive; text-align: center; color: rgb(255, 249, 228);margin-top: 5%; text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5), 0px 0px 13px #000000;}
+#descripcion2 {font-family: 'Press Start 2P', cursive; text-align: center; color: rgb(255, 249, 228);margin-top: 5%; text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5), 0px 0px 13px #000000;}
+#items { margin-left: 20%;margin-right: 20%;background-color: rgba(0, 0, 0);}
+#references {font-size: 20px;filter: drop-shadow(0px 0px 1px #ffffff);}
+.item {color: #ffffff; display: grid; width: 100%; grid-template-columns: 7% 87% 6%; align-items: center;filter: drop-shadow(0px 0px 2px #3d2210);}
+.id {padding-left: 20px; padding-right: 20px;filter: drop-shadow(0px 0px 2px #fbff00);}
+.id2 {padding-left: 20px;}
+#buttonzone {width: 100%; display: flex; justify-content: center;}
+#button { width:300px; height: 50px; font-family: 'Press Start 2P'; font-size: 15px; cursor: pointer;}
+img {width:30px;height: 30px; filter: drop-shadow(0px 0px 2px #bcbd8f);}
+.legendary { color: #ff951c;}
+.epic { color: #ac1cff;}
+.rare { color: #295bff;}
+.uncommon { color: #09ff00;}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOS - The secrets of the browser's console</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.tapimg.net/market/lcs/75f51e6b50b61708e06c62c6ad474481_360.png?imageMogr2/auto-orient/strip">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <nav>
+        <audio controls id="audio">
+            <source src="8bitRO.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+    </nav>
+    <div id="titulo">
+        <h1 id="textomedieval">SCRIPTS OF SHADOWS</h1>
+        <h3 id="textomedieval">The secrets of the browser's console</h3>
+    </div>
+    <div>
+        <div id="buttonzone">
+            <button id="button" onclick="iniciar()">Start Game</button>
+        </div>
+        <p id="descripcion2">choose from the following items and equip them! make sure not to exceed your maximum capacity.</p>
+    </div>
+    <div id="items">
+        <div class="item" id="references">
+            <p class="id2">ID</p>
+            <p>Item names</p>
+            <p>Icon</p>
+        </div>
+
+        <div class="item" id="item0" >
+            <p class="id">100</p>
+            <p class="uncommon">Ivory Helm of Silent Glory</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item1" >
+            <p class="id">101</p>
+            <p class="uncommon">Ivory Batteplate of Silent Glory</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item2" >
+            <p class="id">102</p>
+            <p class="uncommon">Ivory Pauldrons of Silent Glory</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item3" >
+            <p class="id">103</p>
+            <p class="uncommon">Ivory Handguards of Silent Glory</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item4" >
+            <p class="id">104</p>
+            <p class="uncommon">Ivory Leggings of Silent Glory</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item5" >
+            <p class="id">110</p>
+            <p class="epic">Helmet of Extintion</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item6" >
+            <p class="id">111</p>
+            <p class="epic">Chestguard of Extinction</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item7" >
+            <p class="id">112</p>
+            <p class="epic">Pauldrons of Extintion</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item8" >
+            <p class="id">113</p>
+            <p class="epic">Gauntlets of Extintion</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item9" >
+            <p class="id">114</p>
+            <p class="epic">Leggings of Extinction</p>
+            <img src="armor_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item10" >
+            <p class="id">200</p>
+            <p class="rare" >Shield</p>
+            <img src="shield_01b.png" alt="">
+        </div>
+
+        <div class="item" id="item11" >
+            <p class="id">300</p>
+            <p class="legendary">Blazefury, Gift of the Lasting Night</p>
+            <img src="sword_03b.png" alt="">
+        </div>
+
+        <div class="item" id="item12" >
+            <p class="id">301</p>
+            <p class="uncommon">Silverlight, Ornament of Blessing</p>
+            <img src="sword_03b.png" alt="">
+        </div>
+
+        <div class="item" id="item13" >
+            <p class="id">302</p>
+            <p class="rare">Ivory, Favor of Suffering's End</p>
+            <img src="sword_03b.png" alt="">
+        </div>
+
+        <div class="item" id="item14" >
+            <p class="id">400</p>
+            <p class="legendary">Knightfall, Hope of Agony</p>
+            <img src="sword_03b.png" alt="">
+        </div>
+
+        <div class="item" id="item15" >
+            <p class="id">500</p>
+            <p class="epic">Stormherald</p>
+            <img src="sword_03b.png" alt="">
+        </div>
+
+        <div class="item" id="item16" >
+            <p class="id">600</p>
+            <p class="legendary">Last Rites, Memory of the Gladiator</p>
+            <img src="sword_03b.png" alt="">
+        </div>
+
+    </div>
+    
+    <script src="preentrega2pregno.js"></script>
+    
+</body>

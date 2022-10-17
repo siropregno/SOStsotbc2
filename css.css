@@ -1,0 +1,12 @@
+body {background: url(https://fondosmil.com/fondo/29366.jpg)}
+h1 {font-size:60px ;}
+h3 {font-size: 35px;}
+#titulo {margin-top: 100px; font-family: 'Press Start 2P', cursive; text-align: center; color: #ffffff;text-shadow: 0 1px 0 #888, 0 2px 0 #777, 0 3px 0 #666, 0 4px 0 #555, 0 5px 0 #444, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 0px 0px 10px rgba(0,0,0,0.65);}
+#descripcion {font-family: 'Press Start 2P', cursive; text-align: center; color: rgb(255, 249, 228);margin-top: 5%; text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5), 0px 0px 13px #000000;}
+#descripcion2 {font-family: 'Press Start 2P', cursive; text-align: center; color: rgb(255, 249, 228);margin-top: 5%; text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5), 0px 0px 13px #000000;}
+#items { margin: 25px 0px 50px; padding-top: 35px; background:rgba(0, 0, 0, 0.7);display: grid; grid-template-columns: 33% 33% 33%; grid-template-rows: 210px; justify-items: center; align-items: center;}
+#item { font-family: 'Press Start 2P'; font-size: 35px; color: #FFFFFF; text-shadow: 0px 0px 33px #000000, 2px 2px 2px rgba(206,89,55,0.1);}
+#cat { display: flex; flex-direction: column; align-items: center;}
+#buttonzone {width: 100%; display: flex; justify-content: center;}
+#button { width:300px; height: 50px; font-family: 'Press Start 2P'; font-size: 15px; cursor: pointer;}
+img { width: 70px; align-items: center; filter: drop-shadow(0px 0px 30px #ff8800); }
